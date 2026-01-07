@@ -13,10 +13,74 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@0x_amados">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 
+        SELF-HOSTED FONTS - Instrukcja:
+        1. Wejdź na: https://gwfh.mranftl.com/
+        2. Wyszukaj "Inter" - wybierz wagi: 400, 500, 600, 700
+        3. Wyszukaj "JetBrains Mono" - wybierz wagi: 400, 500, 600, 700
+        4. Pobierz ZIP i wypakuj pliki .woff2 do folderu /fonts/ obok tego pliku HTML
+        5. CSS poniżej jest już gotowy do użycia
+    -->
+    <style>
+        /* Inter */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('./fonts/inter-v20-latin-regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('./fonts/inter-v20-latin-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('./fonts/inter-v20-latin-600.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('./fonts/inter-v20-latin-700.woff2') format('woff2');
+        }
+        /* JetBrains Mono */
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('./fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('./fonts/jetbrains-mono-v24-latin-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('./fonts/jetbrains-mono-v24-latin-600.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('./fonts/jetbrains-mono-v24-latin-700.woff2') format('woff2');
+        }
+    </style>
 
     <style>
         :root {
@@ -1018,6 +1082,14 @@
         .form-status.success { color: var(--accent-success); }
         .form-status.error { color: #ef4444; }
 
+        .form-privacy {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            text-align: center;
+            line-height: 1.4;
+        }
+
         /* Footer */
         .footer {
             margin-top: 5rem;
@@ -1839,13 +1911,14 @@
                             <textarea id="message" name="message" placeholder="string" required></textarea>
                         </div>
                         <button type="submit" class="form-submit">Execute Send()</button>
+                        <p class="form-privacy">By submitting this form, you agree to the processing of your data for the purpose of responding. Your data will not be shared with third parties.</p>
                         <div class="form-status" id="formStatus"></div>
                     </form>
                 </div>
 
                 <div class="footer">
                     <div class="footer-copy">
-                        © 2025 paradoxlab.dev
+                        © 2026 paradoxlab.dev
                         <span class="status">System Status: Optimal</span>
                     </div>
                     <div class="footer-links">
