@@ -1,0 +1,20 @@
+# robots.txt for paradoxlab.dev
+
+# Allow all bots to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://paradoxlab.dev/sitemap.xml
+
+# Crawl-delay (optional - uncomment if needed)
+# Crawl-delay: 1
+
+# Block specific folders (if you have any in the future)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /.git/
+
+# Block specific files
+# Disallow: /config.json
+# Disallow: /*.log$
