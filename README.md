@@ -22,21 +22,6 @@ Personal portfolio website showcasing Python automation, crypto bots, and backen
 └── fonts/              # Self-hosted fonts (Inter, JetBrains Mono)
 ```
 
-## 🛠️ Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/paradoxlabdev/paradoxlab-portfolio.git
-cd paradoxlab-portfolio
-```
-
-2. Download fonts from [Google Webfonts Helper](https://gwfh.mranftl.com/):
-   - Inter: 400, 500, 600, 700
-   - JetBrains Mono: 400, 500, 600, 700
-   - Extract `.woff2` files to `/fonts/` folder
-
-3. Open `index.html` in your browser or deploy to GitHub Pages
-
 ## 🌐 Live Site
 
 Created by
