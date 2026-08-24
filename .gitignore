@@ -1,0 +1,4 @@
+# Sekrety — nigdy nie commitujemy .env; wzorzec bez wartości zostaje
+.env
+.env.*
+!.env.example
